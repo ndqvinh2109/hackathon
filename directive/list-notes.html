@@ -1,0 +1,8 @@
+<input type="text" class="form-control" placeholder="Search note" ng-model="search">
+<div>
+    <ul class="list-unstyled" ng-repeat="note in notes | filter:search">
+        <note-item></note-item>
+    </ul>
+</div>
+
+<a href="#/newNote" class="btn btn-primary btn-lg" role="button" ng-click="resetNote()">Add Note</a>
